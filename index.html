@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>№8</title>
+	<link rel="stylesheet" href="output.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body class="duration-[1s] relative overflow-x-hidden">
+
+	<header>
+		<div class="nav-container w-full fixed top-0 left-0 z-30 shadow-2xl">
+			<nav class="flex  max-w-[1350px] mx-auto px-[20px] py-[10px] min-h-[64px] items-center justify-between">
+				<div class="logo w-[50px] h-[50px] flex gap-[10px] items-center">
+					<img src="img/logo.png" alt="">
+					<p>BOOKSHOP</p>
+				</div>
+				<ul class="hidden md:flex md:gap-[30px] lg:gap-[80px] h-full items-center text-[20px]">
+					<li><a href="#" class="font-bold">Home</a></li>
+					<li><a href="#">Book</a></li>
+					<li><a href="#">Audiobook</a></li>
+				</ul>
+				<div class="icons flex h-full  items-center gap-[20px] md:gap-[40px]">
+					<div id="shopCard" class="shop text-[20px] relative">
+						<i class="fa-solid fa-cart-shopping"></i>
+						<span id="shopCount"
+							class="absolute text-black rounded-[50%] text-[12px] flex justify-center items-center bg-[#f7ca18] w-[18px] h-[18px] top-[-2px] right-[-10px] ">0</span>
+					</div>
+					<div id="like" class="like text-[20px] relative ">
+						<i class="fa-solid fa-heart"></i>
+						<span id="likeCount"
+							class="absolute text-black rounded-[50%] text-[12px] flex justify-center items-center bg-[#f7ca18] w-[18px] h-[18px] top-0 right-[-8px] ">0</span>
+					</div>
+					<div class="user text-[20px] hidden md:block ">
+						<i class="fa-solid fa-user "></i>
+					</div>
+					<div class="lightDark text-[20px]  hidden md:flex items-center  w-[70px] justify-between rounded-[25px] p-[5px]">
+						<div id="moon" class=" duration-[0.3s] ">
+							<i  class="fa-solid fa-moon "></i>
+						</div>
+						<div id="sun" class="scale-0 duration-[0.3s] ">
+							<i  class="fa-solid fa-sun"></i>
+						</div>
+					</div>
+					<div class="menuBtn text-[20px] md:hidden">
+						<i id="menu" class="fa-solid fa-bars"></i>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="slider mt-[70px] w-full overflow-hidden min-h-[90.5vh] bg-black ">
+			<div class="slayder-photo relative">
+
+				<div id="slider-photo-1" class="w-full h-[90.5vh] bg-2 absolute top-0 left-0 duration-[1s]">
+				</div>
+				<div id="slider-photo-2" class="w-full h-[90.5vh] bg-1  absolute top-0 left-0 translate-x-full duration-[1s]">
+				</div>
+
+
+
+			</div>
+			<i id="left"
+				class="fa-solid fa-angle-left rounded-[50%] w-[50px] h-[50px] text-[20px] absolute z-20 top-[30%] left-[20px]"></i>
+			<i id="right"
+				class="fa-solid fa-angle-right rounded-[50%] w-[50px] h-[50px] text-[20px]  z-20 absolute top-[30%] right-[20px]"></i>
+		</div>
+
+
+
+		<div class="grid grid-cols-2 lg:grid-cols-4 mx-auto">
+			<div class="flex items-center justify-center max-w-[300px] mx-auto gap-[10px] h-[130px] border-r-[1px] border-r-solit border-r-[var(--blue)] px-[25px] py-[40px] min-h-[142px]">
+				<i class="fa-solid fa-truck-fast text-[40px] text-[var(--blue)]"></i>
+				<div class="text-[var(--blue)]">
+					<p class="mb-[10px] text-[14px]">Quick Delivery</p>
+					<p class="text-[10px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+
+			<div class="flex items-center justify-center max-w-[300px] mx-auto gap-[10px] h-[130px] lg:border-r-[1px] lg:border-r-solit lg:border-r-[var(--blue)] px-[25px] py-[40px] min-h-[142px]">
+				<i class="fa-solid fa-money-check text-[40px] text-[var(--blue)]"></i>
+				<div class="text-[var(--blue)]">
+					<p class="mb-[10px] text-[14px]">Pay with Easy</p>
+					<p class="text-[10px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+
+
+			<div class="flex items-center justify-center max-w-[300px] gap-[10px] mx-auto h-[130px] border-r-[1px] border-r-solit border-r-[var(--blue)] px-[25px] py-[40px] min-h-[142px]">
+				<i class="fa-solid fa-tags text-[40px] text-[var(--blue)]"></i>
+				<div class="text-[var(--blue)]">
+					<p class="mb-[10px] text-[14px]">Best Deal</p>
+					<p class="text-[10px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+
+
+			<div class="flex items-center justify-center max-w-[300px] mx-auto gap-[10px] h-[130px] lg:border-r-[1px] lg:border-r-solit lg:border-r-[var(--blue)] px-[25px] py-[40px] min-h-[142px]">
+				<i class="fa-solid fa-file-shield text-[40px] text-[var(--blue)]"></i>
+				<div class="text-[var(--blue)]">
+					<p class="mb-[10px] text-[14px]">Secured Payment</p>
+					<p class="text-[10px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<div class="w-full overflow-hidden">
+
+		<div id="menuNav" class="manuBar h-[100vh]  bg-[#2b2b2bde] w-[60%] fixed  top-0 right-0 z-40 flex items-center justify-center flex-col translate-x-full duration-[1s]">
+
+			<div id="closeBtn" class="absolute top-[20px] text-[20px] right-[20px]">
+				<i class="fa-solid fa-xmark"></i>
+			</div>
+
+			<ul class="flex gap-[40px] flex-col  items-center text-[20px] h-[300px]">
+				<li><a href="#" class="font-bold">Home</a></li>
+				<li><a href="#">Book</a></li>
+				<li><a href="#">Audiobook</a></li>
+			</ul>
+
+
+			<div class="botom flex justify-between w-[70%] mx-auto px-[20px] absolute bottom-[20px] items-center ">
+				<div class="lightDark text-[20px] flex items-center  w-[70px] justify-between rounded-[25px] p-[5px]">
+					<div id="moon1" class=" duration-[0.3s] ">
+						<i  class="fa-solid fa-moon "></i>
+					</div>
+					<div id="sun1" class="scale-0 duration-[0.3s] ">
+						<i  class="fa-solid fa-sun"></i>
+					</div>
+				</div>
+				<div class="user text-[20px]  ">
+					<i class="fa-solid fa-user "></i>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+	<script src="main.js"></script>
+</body>
+
+</html>
