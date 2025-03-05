@@ -4,11 +4,13 @@
 	--yellow:#f7ca18;
 	--bg:#2b2b2b33;
 	--blue:#1b8bcc;
+	--br-color:#00000017;
 }
 .darkMode{
 	--black:#ffff;
 	--white:#2b2b2b;
 	--blue:#ffff;
+	--br-color:rgba(255, 255, 255, 0.09);
 }
 body{
 	background-color: var(--white);
@@ -48,6 +50,7 @@ i{
 #sun{
 	i{
 		color:var(--yellow);
+		
 	}
 }
 .lightDark{
@@ -67,5 +70,19 @@ i{
 		i{
 			color: var(--yellow);
 		}
+	}
+}
+#menuNav{
+	i{
+		color: white !important;
+	}
+}
+
+@layer utilities {
+	.scrollbar-hide::-webkit-scrollbar {
+			display: none;
+	}
+	.scrollbar-hide {
+			scrollbar-width: none;
 	}
 }

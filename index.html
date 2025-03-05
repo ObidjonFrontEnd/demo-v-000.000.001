@@ -13,8 +13,8 @@
 
 <body class="duration-[1s] relative overflow-x-hidden">
 
-	<header>
-		<div class="nav-container w-full fixed top-0 left-0 z-30 shadow-2xl">
+	<header class="shadow-xl relative">
+		<div id="navbar" class="nav-container w-full fixed top-0 left-0 z-30 shadow-2xl duration-[0.5s]">
 			<nav class="flex  max-w-[1350px] mx-auto px-[20px] py-[10px] min-h-[64px] items-center justify-between">
 				<div class="logo w-[50px] h-[50px] flex gap-[10px] items-center">
 					<img src="img/logo.png" alt="">
@@ -39,12 +39,13 @@
 					<div class="user text-[20px] hidden md:block ">
 						<i class="fa-solid fa-user "></i>
 					</div>
-					<div class="lightDark text-[20px]  hidden md:flex items-center  w-[70px] justify-between rounded-[25px] p-[5px]">
+					<div
+						class="lightDark text-[20px]  hidden md:flex items-center  w-[70px] justify-between rounded-[25px] p-[5px]">
 						<div id="moon" class=" duration-[0.3s] ">
-							<i  class="fa-solid fa-moon "></i>
+							<i class="fa-solid fa-moon "></i>
 						</div>
 						<div id="sun" class="scale-0 duration-[0.3s] ">
-							<i  class="fa-solid fa-sun"></i>
+							<i class="fa-solid fa-sun"></i>
 						</div>
 					</div>
 					<div class="menuBtn text-[20px] md:hidden">
@@ -74,7 +75,8 @@
 
 
 		<div class="grid grid-cols-2 lg:grid-cols-4 mx-auto">
-			<div class="flex items-center justify-center max-w-[300px] mx-auto gap-[10px] h-[130px] border-r-[1px] border-r-solit border-r-[var(--blue)] px-[25px] py-[40px] min-h-[142px]">
+			<div
+				class="flex items-center justify-center max-w-[300px] mx-auto gap-[10px] h-[130px] border-r-[1px] border-r-solit border-r-[var(--blue)] px-[25px] py-[40px] min-h-[142px]">
 				<i class="fa-solid fa-truck-fast text-[40px] text-[var(--blue)]"></i>
 				<div class="text-[var(--blue)]">
 					<p class="mb-[10px] text-[14px]">Quick Delivery</p>
@@ -82,7 +84,8 @@
 				</div>
 			</div>
 
-			<div class="flex items-center justify-center max-w-[300px] mx-auto gap-[10px] h-[130px] lg:border-r-[1px] lg:border-r-solit lg:border-r-[var(--blue)] px-[25px] py-[40px] min-h-[142px]">
+			<div
+				class="flex items-center justify-center max-w-[300px] mx-auto gap-[10px] h-[130px] lg:border-r-[1px] lg:border-r-solit lg:border-r-[var(--blue)] px-[25px] py-[40px] min-h-[142px]">
 				<i class="fa-solid fa-money-check text-[40px] text-[var(--blue)]"></i>
 				<div class="text-[var(--blue)]">
 					<p class="mb-[10px] text-[14px]">Pay with Easy</p>
@@ -91,7 +94,8 @@
 			</div>
 
 
-			<div class="flex items-center justify-center max-w-[300px] gap-[10px] mx-auto h-[130px] border-r-[1px] border-r-solit border-r-[var(--blue)] px-[25px] py-[40px] min-h-[142px]">
+			<div
+				class="flex items-center justify-center max-w-[300px] gap-[10px] mx-auto h-[130px] border-r-[1px] border-r-solit border-r-[var(--blue)] px-[25px] py-[40px] min-h-[142px]">
 				<i class="fa-solid fa-tags text-[40px] text-[var(--blue)]"></i>
 				<div class="text-[var(--blue)]">
 					<p class="mb-[10px] text-[14px]">Best Deal</p>
@@ -100,7 +104,8 @@
 			</div>
 
 
-			<div class="flex items-center justify-center max-w-[300px] mx-auto gap-[10px] h-[130px] lg:border-r-[1px] lg:border-r-solit lg:border-r-[var(--blue)] px-[25px] py-[40px] min-h-[142px]">
+			<div
+				class="flex items-center justify-center max-w-[300px] mx-auto gap-[10px] h-[130px] lg:border-r-[1px] lg:border-r-solit lg:border-r-[var(--blue)] px-[25px] py-[40px] min-h-[142px]">
 				<i class="fa-solid fa-file-shield text-[40px] text-[var(--blue)]"></i>
 				<div class="text-[var(--blue)]">
 					<p class="mb-[10px] text-[14px]">Secured Payment</p>
@@ -113,10 +118,11 @@
 
 	<div class="w-full overflow-hidden">
 
-		<div id="menuNav" class="manuBar h-[100vh]  bg-[#2b2b2bde] w-[60%] fixed  top-0 right-0 z-40 flex items-center justify-center flex-col translate-x-full duration-[1s]">
+		<div id="menuNav"
+			class="manuBar h-[100vh]  bg-[#2b2b2bde] w-[60%] fixed  top-0 right-0 z-40 flex items-center justify-center flex-col translate-x-full duration-[1s]">
 
-			<div id="closeBtn" class="absolute top-[20px] text-[20px] right-[20px]">
-				<i class="fa-solid fa-xmark text-white"></i>
+			<div id="closeBtn" class="absolute top-[20px] text-[20px] right-[20px] text-white">
+				<i class="fa-solid fa-xmark"></i>
 			</div>
 
 			<ul class="flex gap-[40px] flex-col  items-center text-[20px] h-[300px]">
@@ -129,10 +135,10 @@
 			<div class="botom flex justify-between w-[70%] mx-auto px-[20px] absolute bottom-[20px] items-center ">
 				<div class="lightDark text-[20px] flex items-center  w-[70px] justify-between rounded-[25px] p-[5px]">
 					<div id="moon1" class=" duration-[0.3s] ">
-						<i  class="fa-solid fa-moon "></i>
+						<i class="fa-solid fa-moon "></i>
 					</div>
 					<div id="sun1" class="scale-0 duration-[0.3s] ">
-						<i  class="fa-solid fa-sun"></i>
+						<i class="fa-solid fa-sun"></i>
 					</div>
 				</div>
 				<div class="user text-[20px]  ">
@@ -144,6 +150,146 @@
 	</div>
 
 
+	<section id="Products">
+		<div class="title">
+			<h1 class="text-center text-[25px]  text-[var(--blue)] font-bold py-[50px]">Products</h1>
+		</div>
+
+		<div class="flex gap-[10px] flex-col md:flex-row overflow-hidden">
+
+			<div id="categories"
+				class="categories flex-col px-[20px]  gap-[5px] md:ml-[50px] md:border-r-[1px] md:border-r-solid md:border-r-[var(--br-color)] md:w-[300px] md:border-t-[1px] md:border-t-solid md:border-t-[var(--br-color)]  flex ">
+				<h2 id="categoriesOpen"
+					class="text-[var(--black)] text-[20px] font-bold py-[10px] text-center md:text-start mb-[10px] md:mb-0">
+					Categories <span class="md:hidden"><i id="arrowDown"
+							class="fa-solid fa-chevron-down duration-[1s] "></i></span></h2>
+
+				<div id="categoriesBody"
+					class="  md:h-full  overflow-hidden max-h-0 md:max-h-full transition-[max-height] duration-1000 ease-in-out grid gap-y-[10px]  justify-center md:block">
+					<button
+						class="flex group items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit ">
+						<div
+							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+						</div>
+						<h3>All Categories</h3>
+					</button>
+
+					<button
+						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+						<div
+							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+						</div>
+						<h3>Modern</h3>
+					</button>
+
+					<button
+						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+						<div
+							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+						</div>
+						<h3>Biography</h3>
+					</button>
+
+					<button
+						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+						<div
+							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+						</div>
+						<h3>Cookbooks</h3>
+					</button>
+
+					<button
+						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+						<div
+							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+						</div>
+						<h3>Detective</h3>
+					</button>
+					<button
+						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+						<div
+							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+						</div>
+						<h3>Fantasy</h3>
+					</button>
+					<button
+						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+						<div
+							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+						</div>
+						<h3>Fairy tale</h3>
+					</button>
+
+
+					<button
+						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+						<div
+							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+						</div>
+						<h3>Fiction</h3>
+					</button>
+
+					<button
+						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+						<div
+							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+						</div>
+						<h3>Horror</h3>
+					</button>
+
+
+					<button
+						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+						<div
+							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+						</div>
+						<h3>Historical fiction</h3>
+					</button>
+
+
+
+				</div>
+
+
+			</div>
+
+
+			<div class="w-full md:w-[75%] flex flex-col gap-[50px] px-[20px] ">
+				<div
+					class="w-full  border-solid border-[1px] border-[var(--br-color)] flex rounded-[8px] overflow-hidden  shadow-[0px_3px_10px_2px_rgba(0,0,0,0.1),0px_10px_20px_5px_rgba(0,0,0,0.05)]">
+					<input type="text" class="w-full outline-none px-[20px] py-[20px] bg-transparent   text-gray-700  shadow-xl "
+						placeholder="Search by title..." id="inputSearh">
+					<button class="bg-[#47ddaa] px-[30px] "><i class="fa-solid fa-right-left"></i></button>
+				</div>
+
+
+				<div id="cards"
+					class="grid md:grid-cols-2 xl:grid-cols-4 border-solid border-[1px] border-[var(--br-color)] w-full h-full sm:p-[15px] gap-y-[30px] gap-x-[20px] overflow-x-auto max-h-[88vh]  pb-[65px] scrollbar-hide "></div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+
+	<div id="cardBody" class="w-[90%] md:w-[40%] bg-[var(--black)] h-full fixed top-0 right-0 z-40 duration-[0.5s] translate-x-full">
+		<div class="title px-[50px] py-[30px]">
+			<h2 class="text-[var(--white)] text-[35px] mb-[10px]">Card</h2>
+		</div>
+
+		<div id="cardBuy" class="text-[var(--white)] flex flex-col gap-[15px] px-[20px]"></div>
+		<div class="w-full  h-[100px]  flex absolute bottom-0 left-0">
+			<div class="w-[50%] bg-[#e8bc0e] h-full flex justify-center items-center">
+				<p class="text-[var(--white)] text-[25px] font-bold">0</p>
+			</div>
+			<div id="cardBodyClose" class="w-[50%] bg-[var(--white)] h-full flex justify-center items-center">
+				<p class="text-[var(--black)] text-[25px] font-bold">Close</p>
+			</div>
+		</div>
+	</div>
 
 
 
