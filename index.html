@@ -165,87 +165,108 @@
 							class="fa-solid fa-chevron-down duration-[1s] "></i></span></h2>
 
 				<div id="categoriesBody"
-					class="  md:h-full  overflow-hidden max-h-0 md:max-h-full transition-[max-height] duration-1000 ease-in-out grid gap-y-[10px]  justify-center md:block">
-					<button
-						class="flex group items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit ">
+					class=" md:h-full  overflow-hidden max-h-0 md:max-h-full transition-[max-height] duration-1000 ease-in-out grid gap-y-[10px]  justify-center md:block">
+					<button onclick="filer('all')"
+						class="category-btn active1 flex group items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit ">
 						<div
-							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+							class="in w-[13px]  group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
 						</div>
 						<h3>All Categories</h3>
 					</button>
 
-					<button
-						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+					<button onclick="filer('Modern')" 
+						class="category-btn flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
 						<div
-							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+							class="w-[13px] in group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
 						</div>
 						<h3>Modern</h3>
 					</button>
 
-					<button
-						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+					<button onclick="filer('Biography')"
+						class="category-btn flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
 						<div
-							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+							class="w-[13px] in group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
 						</div>
 						<h3>Biography</h3>
 					</button>
 
-					<button
-						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+					<button  onclick="filer('Cookbook')"
+						class=" category-btn flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
 						<div
-							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+							class="w-[13px] in group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
 						</div>
 						<h3>Cookbooks</h3>
 					</button>
 
-					<button
-						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+					<button onclick="filer('Detective')"
+						class="category-btn flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
 						<div
-							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+							class="w-[13px] in group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
 						</div>
 						<h3>Detective</h3>
 					</button>
-					<button
-						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
-						<div
-							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+					<button onclick="filer('Fantasy')"
+						class="category-btn flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+						<div 
+							class="w-[13px] in group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
 						</div>
 						<h3>Fantasy</h3>
 					</button>
-					<button
-						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+					<button onclick="filer('Fairy tale')"
+						class="category-btn flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
 						<div
-							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+							class="w-[13px] in group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
 						</div>
 						<h3>Fairy tale</h3>
 					</button>
 
 
-					<button
-						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+					<button onclick="filer('Fiction')"
+						class="category-btn flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
 						<div
-							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+							class="w-[13px] in group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
 						</div>
 						<h3>Fiction</h3>
 					</button>
 
-					<button
-						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+					<button onclick="filer('Horror')"
+						class="category-btn flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
 						<div
-							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+							class="w-[13px] in group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
 						</div>
 						<h3>Horror</h3>
 					</button>
 
 
-					<button
-						class="flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+					<button onclick="filer('Historical fiction')"
+						class="category-btn flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
 						<div
-							class="w-[13px] group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+							class="w-[13px] in group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
 						</div>
 						<h3>Historical fiction</h3>
 					</button>
 
+
+					<button onclick="filer('History')"
+					class="category-btn flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+					<div
+						class="w-[13px] in group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+					</div>
+					<h3>History</h3>
+				</button>
+
+
+				<button onclick="filer('Romance')"
+				class="category-btn flex group  items-center gap-[10px] relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:h-[1.5px] overflow-x-hidden after:translate-x-[-100%] hover:after:translate-x-[0] after:duration-[0.5s] after:w-full after:bg-[var(--blue)] pb-[5px] w-fit">
+				<div
+					class="w-[13px] in group-hover:bg-[var(--blue)] h-[13px] rounded-[50%]  border-[var(--black)] border-[1px] border-solid">
+				</div>
+				<h3>Romance</h3>
+			</button>
+
+
+
+		
 
 
 				</div>

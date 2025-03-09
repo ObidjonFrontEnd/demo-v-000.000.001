@@ -88,6 +88,15 @@ i{
 }
 
 
-/* sign up login */
-
+.active1 {
+  color: var(--blue);
+	border-bottom: var(--blue) solid 1.5px;
+	transition: all 0s ease;	
+}
+.active1 .in{
+	background-color: var(--blue);
+}
+.category-btn.active::after {
+  content: none;
+}
 
