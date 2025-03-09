@@ -1641,3 +1641,49 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+
+@keyframes linerOT {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-40px) rotate(360deg);
+  }
+}
+.animate-\[linerOT_1s_ease-in-out_both\] {
+  animation: linerOT 1s ease-in-out both;
+}
+
+@keyframes linerTo {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(40px) rotate(200deg);
+  }
+}
+
+.animate-\[linerTo_1s_ease-in-out_both\] {
+  animation: linerTo 1s ease-in-out both;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-fadeOut {
+  animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+.resize-none {
+  resize: none;
+}
